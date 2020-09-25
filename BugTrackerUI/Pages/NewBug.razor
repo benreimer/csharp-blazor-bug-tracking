@@ -5,9 +5,11 @@
 
 
 <EditForm Model="AddBug">
-    <InputText id="title" @bind-Value="AddBug.Title" placeholder="Enter Title"/>
-    <InputText id="description" @bind-Value="AddBug.Description" placeholder="Enter Description"/>
-    <InputNumber id="inputnumber" @bind-Value="AddBug.Priority" placeholder="Enter Priority"/>
+    <InputText @bind-Value="@AddBug.Title" placeholder="Enter Title" />
+    <InputText @bind-Value="@AddBug.Description" placeholder="Enter Description" />
+    <InputNumber @bind-Value="@AddBug.Priority" placeholder="Enter Priority" />
+    <button type="submit">Add Bug</button>
+
     <button type="submit">Add Bug</button>
 
 </EditForm>
